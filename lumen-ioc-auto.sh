@@ -170,7 +170,7 @@ class Create${REPLY^}sTable extends Migration
 " >> ${TIME}_create_${REPLY,,}s_table.php
 echo "$(tput bold)Migration created with boilerplate codes$(tput sgr0)"
 
-cd .. && cd .. && cd .. # Exit to the root directory
+cd .. && cd .. # Exit to the root directory
 
 cd bootstrap 
 
@@ -181,4 +181,4 @@ else
     echo "$(tput bold)Service Provider registered successfully inside app.php of the bootstrap directory.$(tput sgr0)"
 fi
 
-cd .. && cd .. && cd .. # Exit to the root directory
+cd .. # Exit to the root directory
