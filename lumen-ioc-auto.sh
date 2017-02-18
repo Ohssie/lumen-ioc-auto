@@ -32,7 +32,12 @@ echo "$(tput bold)Model created with boilerplate code$(tput sgr0)"
 cd .. # Exit to the root directory
 
 # Create Repositories directory along with Contract and Eloquent Repository files
-cd app && mkdir $REPOSITORIES
+cd app
+
+if [ ! -d "$REPOSITORIES" ]; then
+  mkdir $REPOSITORIES
+fi
+
 cd $REPOSITORIES
 mkdir ${REPLY^} && cd ${REPLY^}
 touch ${REPLY^}Contract.php && touch Eloquent${REPLY^}Repository.php
