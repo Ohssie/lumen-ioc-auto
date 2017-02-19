@@ -49,7 +49,7 @@ namespace App\\$REPOSITORIES\\${REPLY^};
 interface ${REPLY^}Contract
 {
     public function create(\$request);
-    public function findById(\$${REPLY^,}Id);
+    public function findById(\$${REPLY,}Id);
     public function findAll();
 }
 " >> ${REPLY^}Contract.php
