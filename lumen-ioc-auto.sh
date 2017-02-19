@@ -136,7 +136,6 @@ class ${REPLY^}Controller extends Controller
 echo "$(tput bold)Controller created with boilerplate code$(tput sgr0)"
 
 cd .. && cd .. && cd .. # Exit to the root directory
-# # Contact GitHub API Training Shop Blog About
 
 cd  database && cd migrations && touch ${TIME}_create_${REPLY,,}s_table.php
 
